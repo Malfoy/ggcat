@@ -235,7 +235,7 @@ namespace ggcat
             uint32_t gfa_output_version = 0,
 
             // Enable disk optimization
-            bool enable_disk_optimization = true);
+            bool enable_disk_optimization = false);
 
         /// Builds a new graph from the given input streams, with the specified parameters
         template <typename S>
@@ -274,7 +274,7 @@ namespace ggcat
             bool output_gfa = false,
 
             // Enable disk optimization
-            bool enable_disk_optimization = true)
+            bool enable_disk_optimization = false)
         {
 
             thread_local std::unique_ptr<StreamReader> stream_reader = nullptr;
